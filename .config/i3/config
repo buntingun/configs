@@ -45,7 +45,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec flatpak run org.wezfurlong.wezterm
+bindsym $mod+Return exec wezterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -209,4 +209,4 @@ default_border none
 
 # startup applications
 exec --no-startup-id i3-msg 'workspace 2; exec firefox; workspace 1'
-exec --no-startup-id i3-msg 'workspace 1; exec flatpak run org.wezfurlong.wezterm' 
+exec --no-startup-id i3-msg 'workspace 1; exec wezterm' 
