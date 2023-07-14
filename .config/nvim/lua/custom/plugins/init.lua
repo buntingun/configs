@@ -7,5 +7,11 @@ return {
     'm4xshen/hardtime.nvim',
     event = 'VeryLazy',
     opts = {}
+  },
+  {
+    'stevearc/oil.nvim',
+    opts = {},
+    -- Optional dependencies
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
   }
 }
