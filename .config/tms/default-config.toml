@@ -1,0 +1,5 @@
+search_paths = [
+    '/home/me/school',
+    '/home/me/work',
+    '/home/me/projects',
+]
