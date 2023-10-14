@@ -223,3 +223,4 @@ default_border none
 # startup applications
 exec --no-startup-id i3-msg 'workspace 2; exec firefox; workspace 1'
 exec --no-startup-id i3-msg 'workspace 1; exec wezterm' 
+exec --no-startup-id /home/me/.profile
