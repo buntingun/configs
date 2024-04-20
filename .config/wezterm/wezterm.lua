@@ -23,7 +23,19 @@ config.keys = {
     mods = 'LEADER',
     action = wezterm.action.ActivateCopyMode
   },
+  { 
+    key = "c",
+    mods = "LEADER",
+    action = wezterm.action.SpawnTab "CurrentPaneDomain"
+  },
+  { 
+    key = "x",
+    mods = "LEADER",
+    action = wezterm.action.CloseCurrentTab { confirm = false }
+  },
   { key = "f", mods = "LEADER", action = wezterm.action_callback(sessionizer.toggle) },
+  { key="l", mods="LEADER", action=wezterm.action{ActivateTabRelative=1} },
+  { key="h", mods="LEADER", action=wezterm.action{ActivateTabRelative=-1} },
 }
 
 smart_splits.apply_to_config(config, {
